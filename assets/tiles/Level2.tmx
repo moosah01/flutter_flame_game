@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="120" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="269">
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="120" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="283">
  <tileset firstgid="1" source="spritesheet.tsx"/>
  <tileset firstgid="8" source="mossTopHead.tsx"/>
  <tileset firstgid="9" source="mossBottomHead.tsx"/>
@@ -64,7 +64,21 @@
   <object id="238" x="3745.33" y="322" width="31.3333" height="158.667"/>
  </objectgroup>
  <objectgroup id="8" name="SpawnPoints">
-  <object id="45" type="Coin" gid="12" x="99.333" y="369.167" width="32" height="32"/>
+  <object id="45" type="Coin" gid="12" x="97.9997" y="370.5" width="32" height="32"/>
+  <object id="280" type="Coin" gid="12" x="97.9997" y="370.5" width="32" height="32"/>
+  <object id="281" type="Coin" gid="12" x="124.666" y="374.5" width="32" height="32"/>
+  <object id="282" type="Coin" gid="12" x="124.666" y="374.5" width="32" height="32"/>
+  <object id="269" type="Coin" gid="12" x="100.666" y="258.5" width="32" height="32"/>
+  <object id="270" type="Coin" gid="12" x="134" y="257.167" width="32" height="32"/>
+  <object id="271" type="Coin" gid="12" x="159.333" y="258.5" width="32" height="32"/>
+  <object id="272" type="Coin" gid="12" x="158" y="278.5" width="32" height="32"/>
+  <object id="273" type="Coin" gid="12" x="148.666" y="294.5" width="32" height="32"/>
+  <object id="274" type="Coin" gid="12" x="148.666" y="294.5" width="32" height="32"/>
+  <object id="275" type="Coin" gid="12" x="138" y="305.167" width="32" height="32"/>
+  <object id="276" type="Coin" gid="12" x="132.666" y="319.834" width="32" height="32"/>
+  <object id="277" type="Coin" gid="12" x="126" y="337.167" width="32" height="32"/>
+  <object id="278" type="Coin" gid="12" x="122" y="343.834" width="32" height="32"/>
+  <object id="279" type="Coin" gid="12" x="122" y="343.834" width="32" height="32"/>
   <object id="46" type="Coin" gid="12" x="153.833" y="375.667" width="32" height="32"/>
   <object id="48" type="Coin" gid="12" x="416.666" y="480.667" width="32" height="32"/>
   <object id="49" type="Coin" gid="12" x="547.333" y="381.667" width="32" height="32"/>
@@ -77,9 +91,9 @@
   <object id="58" type="Coin" gid="12" x="2030" y="284" width="32" height="32"/>
   <object id="59" type="Coin" gid="12" x="2274" y="484" width="32" height="32"/>
   <object id="63" type="Coin" gid="12" x="3746" y="284" width="32" height="32"/>
-  <object id="140" type="Door" gid="3" x="3777.33" y="494.667" width="64" height="96">
+  <object id="140" type="Door" gid="3" x="259.03" y="401.958" width="64" height="96">
    <properties>
-    <property name="NextLevel" value="Level2.tmx"/>
+    <property name="NextLevel" value="Level1.tmx"/>
    </properties>
   </object>
   <object id="182" type="Player" gid="11" x="47" y="388.333" width="32" height="32"/>

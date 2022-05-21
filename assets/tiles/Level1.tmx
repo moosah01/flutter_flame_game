@@ -80,7 +80,7 @@
   <object id="58" type="Coin" gid="12" x="2030" y="284" width="32" height="32"/>
   <object id="59" type="Coin" gid="12" x="2274" y="484" width="32" height="32"/>
   <object id="63" type="Coin" gid="12" x="3746" y="284" width="32" height="32"/>
-  <object id="140" type="Door" gid="3" x="3776.33" y="481.667" width="64" height="96">
+  <object id="140" type="Door" gid="3" x="369.663" y="351" width="64" height="96">
    <properties>
     <property name="NextLevel" value="mainMenu"/>
    </properties>

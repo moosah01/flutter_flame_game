@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_flame_game/main_game_runner.dart';
 import 'package:flutter_flame_game/startLoreVideo.dart';
 import 'package:video_player/video_player.dart';
 
@@ -62,7 +63,7 @@ class StartGameWidget extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const startLore()),
+                    MaterialPageRoute(builder: (context) => const MyAppGame()),
                   );
                 },
                 child: Container(
