@@ -1,10 +1,17 @@
+import 'dart:ui';
+
+import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
 import 'package:flame/image_composition.dart';
 import 'package:flame/input.dart';
+import 'package:flame/palette.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 import 'package:flame/game.dart';
 import 'package:flutter_flame_game/game/level/level.dart';
 import 'package:flutter_flame_game/game/touch_controls.dart';
+import 'package:flutter_flame_game/main.dart';
+import 'package:provider/provider.dart';
+import 'package:flame_audio/flame_audio.dart';
 //import 'touch_controls.dart';
 
 class PlatformGame extends FlameGame
@@ -19,10 +26,13 @@ class PlatformGame extends FlameGame
   late TouchControls touchControls;
   // late TouchControls touchControls;
 
+  late TextComponent scoreTextComponent;
+  //late TextComponent playerHealth;
+
   @override
   Future<void>? onLoad() async {
     // TODO: implement onLoad
-
+    FlameAudio.bgm.initialize();
     await Flame.device.fullScreen();
     await Flame.device.setLandscape();
 
@@ -32,10 +42,9 @@ class PlatformGame extends FlameGame
     spriteSheet = await images.load('Spritesheet.png');
     doorImage = await images.load('Door.png');
 
-    camera.viewport = FixedResolutionViewport(Vector2(1280, 576));
+    camera.viewport = FixedResolutionViewport(Vector2(640, 330));
 
-    // touchControls = TouchControls(position: Vector2.zero(), priority: 1);
-    //  add(touchControls);
+    FlameAudio.bgm.play('backgroundGameAudio.mp3');
     touchControls = TouchControls(position: Vector2.zero(), priority: 1);
     add(touchControls);
 
@@ -43,6 +52,15 @@ class PlatformGame extends FlameGame
 
     return super.onLoad();
   }
+
+  @override
+  // void update(double dt) {
+  //   if (buildContext != null) {
+  //     final gameState = Provider.of<GameState>(buildContext!, listen: false);
+  //     scoreTextComponent.text = 'Score: ${gameState.score}';
+  //   }
+  //   super.update(dt);
+  // }
 
   void loadLevel(String LevelName) {
     _currentLevel?.removeFromParent();

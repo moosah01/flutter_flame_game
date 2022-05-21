@@ -1,8 +1,20 @@
+import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
+import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
+import 'package:flame_audio/flame_audio.dart';
+import 'package:flutter/animation.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter_flame_game/game/actor/player.dart';
+import 'package:flame/game.dart';
+import 'package:flutter_flame_game/game/game.dart';
+import 'package:provider/provider.dart';
+import '../../main_game_runner.dart';
 
-class Coin extends SpriteComponent {
+import '../../main.dart';
+
+class Coin extends SpriteComponent
+    with CollisionCallbacks, HasGameRef<PlatformGame> {
   Coin(
     Image image, {
     //   Vector2? srcPosition,
@@ -26,4 +38,38 @@ class Coin extends SpriteComponent {
           priority: priority,
           position: position,
         );
+
+  @override
+  Future<void>? onLoad() {
+    // TODO: implement onLoad
+    add(CircleHitbox()..collisionType = CollisionType.passive);
+    add(MoveByEffect(
+        Vector2(0, -10),
+        EffectController(
+          alternate: true,
+          infinite: true,
+          duration: 0.8,
+          curve: Curves.ease,
+        )));
+
+    return super.onLoad();
+  }
+
+  @override
+  void onCollisionStart(
+      Set<Vector2> intersectionPoints, PositionComponent other) {
+    // TODO: implement onCollisionStart
+    if (other is Player) {
+      //add(RemoveEffect());
+      FlameAudio.play('collectCoin.mp3');
+      final gameState =
+          Provider.of<GameState>(gameRef.buildContext!, listen: false);
+      gameState.score += 10;
+      add(OpacityEffect.fadeOut(LinearEffectController(0.3))
+        ..onFinishCallback = () {
+          add(RemoveEffect());
+        });
+    }
+    super.onCollisionStart(intersectionPoints, other);
+  }
 }
