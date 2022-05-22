@@ -72,7 +72,7 @@ class PlatformGame extends FlameGame
   @override
   void onDetach() {
     Flame.images.clearCache();
-    FlameAudio.bgm.stop();
+    FlameAudio.bgm.clearAll();
     FlameAudio.bgm.audioCache.clearAll();
 
     super.onDetach();

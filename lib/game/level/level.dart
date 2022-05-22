@@ -119,6 +119,7 @@ class level extends Component with HasGameRef<PlatformGame> {
             FlameAudio.bgm.stop();
             gameState.health = 500;
             gameState.score = 0;
+            FlameAudio.bgm.clearAll();
             Future.delayed(const Duration(milliseconds: 2500), () {
               Navigator.of(context!).pushReplacement(
                   MaterialPageRoute(builder: (context) => mainMenu()));

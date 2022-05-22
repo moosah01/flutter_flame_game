@@ -62,12 +62,13 @@ class Aegis extends SpriteComponent
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (other is Player) {
       FlameAudio.bgm.stop();
+      FlameAudio.bgm.clearAll();
       FlameAudio.play('gameWin.mp3');
       final effect =
-          ScaleEffect.by(Vector2.all(2), EffectController(duration: 2.0));
+          ScaleEffect.by(Vector2.all(1.5), EffectController(duration: 2.0));
       add(effect);
       final effect1 =
-          MoveToEffect(Vector2(3486, 200), EffectController(duration: 1.0));
+          MoveToEffect(Vector2(3486, 310), EffectController(duration: 1.0));
       add(effect1);
       onPlayerEnter?.call();
     }
