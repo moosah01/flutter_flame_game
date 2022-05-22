@@ -96,8 +96,7 @@ class StartGameWidget extends StatelessWidget {
                         fontFamily: "Invasion2000")),
               ),
               Container(
-                child: const Text(
-                    "Moosa\nAmmar\nEbrahim\nHeavyInspiratingfromDevKageSir",
+                child: const Text("Moosa\nAmmar\nEbrahim",
                     style: TextStyle(
                         // fontWeight: FontWeight.bold,
                         color: Colors.white,

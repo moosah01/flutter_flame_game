@@ -45,7 +45,7 @@ class Enemy extends SpriteComponent
   @override
   Future<void>? onLoad() {
     // TODO: implement onLoad
-    add(CircleHitbox()..collisionType = CollisionType.active);
+    add(CircleHitbox()..collisionType = CollisionType.passive);
     // add(MoveByEffect(
     //     Vector2(0, -10),
     //     EffectController(

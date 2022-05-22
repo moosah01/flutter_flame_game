@@ -83,7 +83,7 @@
   <object id="58" type="Coin" gid="12" x="2030" y="284" width="32" height="32"/>
   <object id="59" type="Coin" gid="12" x="2274" y="484" width="32" height="32"/>
   <object id="63" type="Coin" gid="12" x="3746" y="284" width="32" height="32"/>
-  <object id="140" type="Door" gid="3" x="3777.83" y="477.667" width="64" height="96">
+  <object id="140" type="Door" gid="3" x="231.83" y="395.667" width="64" height="96">
    <properties>
     <property name="NextLevel" value="Level3.tmx"/>
    </properties>

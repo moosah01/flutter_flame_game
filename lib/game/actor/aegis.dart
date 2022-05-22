@@ -61,6 +61,7 @@ class Aegis extends SpriteComponent
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (other is Player) {
+      FlameAudio.bgm.stop();
       FlameAudio.play('gameWin.mp3');
       final effect =
           ScaleEffect.by(Vector2.all(2), EffectController(duration: 2.0));
@@ -70,18 +71,6 @@ class Aegis extends SpriteComponent
       add(effect1);
       onPlayerEnter?.call();
     }
-    // TODO: implement onCollisionStart
-
-    // add(OpacityEffect.fadeOut(LinearEffectController(3.0))
-    //   ..onFinishCallback = () {
-    //     add(RemoveEffect());
-    //   });
-
-    // final effect1 = MoveAlongPathEffect(
-    //   Path()..quadraticBezierTo(150, 300, 50, 50),
-    //   EffectController(duration: 1.5),
-    // );
-    //add(effect1);
 
     super.onCollision(intersectionPoints, other);
   }
