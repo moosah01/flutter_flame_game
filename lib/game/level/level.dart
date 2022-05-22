@@ -4,6 +4,7 @@ import 'package:flame/image_composition.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_flame_game/game/actor/aegis.dart';
 import 'package:flutter_flame_game/game/actor/coin.dart';
 import 'package:flutter_flame_game/game/actor/enemy.dart';
 import 'package:flutter_flame_game/game/game.dart';
@@ -90,15 +91,15 @@ class level extends Component with HasGameRef<PlatformGame> {
           final door = Door(gameRef.doorImage,
               position: positionActor,
               size: Vector2(64, 96), onPlayerEnter: () {
-            if (spawnPoint.properties.first.value == 'mainMenu') {
-              gameState.health = 300;
-              FlameAudio.bgm.stop();
-              gameState.score = 0;
-              Navigator.of(context!)
-                  .push(MaterialPageRoute(builder: (context) => mainMenu()));
-            } else {
-              gameRef.loadLevel(spawnPoint.properties.first.value);
-            }
+            //   if (spawnPoint.properties.first.value == 'mainMenu') {
+            //     gameState.health = 300;
+            //     FlameAudio.bgm.stop();
+            //     gameState.score = 0;
+            //     Navigator.of(context!).pushReplacement(
+            //         MaterialPageRoute(builder: (context) => mainMenu()));
+            // //  } else {
+            gameRef.loadLevel(spawnPoint.properties.first.value);
+            // }
           });
           add(door);
 
@@ -108,6 +109,22 @@ class level extends Component with HasGameRef<PlatformGame> {
           final enemy = Enemy(gameRef.enemyImage,
               position: positionActor, size: Vector2(32, 32));
           add(enemy);
+
+          break;
+
+        case 'Aegis':
+          final aegis = Aegis(gameRef.AegisImage,
+              position: positionActor,
+              size: Vector2(96, 96), onPlayerEnter: () {
+            FlameAudio.bgm.stop();
+            gameState.health = 500;
+            gameState.score = 0;
+            Future.delayed(const Duration(milliseconds: 2500), () {
+              Navigator.of(context!).pushReplacement(
+                  MaterialPageRoute(builder: (context) => mainMenu()));
+            });
+          });
+          add(aegis);
 
           break;
       }

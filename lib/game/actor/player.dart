@@ -58,7 +58,7 @@ class Player extends SpriteComponent
     final halfSize = size! / 2;
     _minClamp = levelBounds.topLeft.toVector2() + halfSize;
     _maxClamp = levelBounds.bottomRight.toVector2() - halfSize;
-    _maxClamp.y = 477;
+    //_maxClamp.y = 477;
     // playerHealth = 5;
   }
 

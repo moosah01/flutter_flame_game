@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_flame_game/main_game_runner.dart';
-import 'package:flutter_flame_game/mainmenu.dart';
+//import 'package:flutter_flame_game/mainmenu.dart';
 import 'package:video_player/video_player.dart';
 
 class startLore extends StatefulWidget {
@@ -12,6 +12,7 @@ class startLore extends StatefulWidget {
 
 class _startLoreState extends State<startLore> {
   late VideoPlayerController _controller;
+  late bool forwarded;
 
   // void checkVideo() {
   //   if (_controller.value.position ==
@@ -22,21 +23,33 @@ class _startLoreState extends State<startLore> {
   //   }
   // }
 
+  @override
   void initState() {
     super.initState();
     _controller = VideoPlayerController.asset("assets/LoreFinal.mp4")
       ..initialize().then((_) {
         _controller.play();
-        //_controller.setLooping(true);
+        _controller.addListener(() {
+          if (!_controller.value.isPlaying) {
+            //Navigator.of(context).push(_createRoute());
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MyAppGame()),
+            );
+          }
+        });
 
+        //_controller.setLooping(true);
         setState(() {});
       });
+    //_controller.addListener(checkVideo);
+//add here
+  }
 
-    // _controller.addListener(checkVideo);
-
-    Future.delayed(const Duration(seconds: 23), () {
-      Navigator.of(context).push(_createRoute());
-    });
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -46,13 +59,34 @@ class _startLoreState extends State<startLore> {
         children: <Widget>[
           SizedBox.expand(
             child: FittedBox(
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
                 child: SizedBox(
                   width: _controller.value.size.width,
                   height: _controller.value.size.height,
                   child: VideoPlayer(_controller),
                 )),
           ),
+          Positioned(
+              top: MediaQuery.of(context).size.height / 2,
+              left: MediaQuery.of(context).size.width / 1.2,
+              child: GestureDetector(
+                  child: Container(
+                      height: 50,
+                      width: 50,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                        image: AssetImage('assets/images/fastForward.png'),
+                        fit: BoxFit.fill,
+                      ))),
+                  onTap: () {
+                    forwarded = true;
+                    _controller.pause();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MyAppGame()),
+                    );
+                  })),
         ],
       ),
       // This trailing comma makes auto-formatting nicer for build methods.

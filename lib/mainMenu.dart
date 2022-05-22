@@ -63,11 +63,11 @@ class StartGameWidget extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const MyAppGame()),
+                    MaterialPageRoute(builder: (context) => const startLore()),
                   );
                 },
                 child: Container(
-                  child: const Text("The Last Resort",
+                  child: const Text("Shapatar Man",
                       style: TextStyle(
                           // fontWeight: FontWeight.bold,
                           color: Colors.white,

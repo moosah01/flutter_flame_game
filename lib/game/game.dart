@@ -23,6 +23,7 @@ class PlatformGame extends FlameGame
   late Image enemyImage;
   late Image spriteSheet;
   late Image doorImage;
+  late Image AegisImage;
   late TouchControls touchControls;
   // late TouchControls touchControls;
 
@@ -41,6 +42,7 @@ class PlatformGame extends FlameGame
     enemyImage = await images.load('Enemy.png');
     spriteSheet = await images.load('Spritesheet.png');
     doorImage = await images.load('Door.png');
+    AegisImage = await images.load('Aegis.png');
 
     camera.viewport = FixedResolutionViewport(Vector2(640, 330));
 
@@ -53,7 +55,6 @@ class PlatformGame extends FlameGame
     return super.onLoad();
   }
 
-  @override
   // void update(double dt) {
   //   if (buildContext != null) {
   //     final gameState = Provider.of<GameState>(buildContext!, listen: false);
@@ -66,5 +67,11 @@ class PlatformGame extends FlameGame
     _currentLevel?.removeFromParent();
     _currentLevel = level(LevelName);
     add(_currentLevel!);
+  }
+
+  @override
+  void onDetach() {
+    Flame.images.clearCache();
+    super.onDetach();
   }
 }

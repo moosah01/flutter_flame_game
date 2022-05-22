@@ -1,131 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="120" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="283">
- <tileset firstgid="1" source="spritesheet.tsx"/>
- <tileset firstgid="8" source="mossTopHead.tsx"/>
- <tileset firstgid="9" source="mossBottomHead.tsx"/>
- <tileset firstgid="10" source="MossUpsideDown.tsx"/>
- <tileset firstgid="11" source="Player.tsx"/>
- <tileset firstgid="12" source="Coin.tsx"/>
- <tileset firstgid="13" source="Enemy.tsx"/>
- <imagelayer id="7" name="Background.png" visible="0" offsetx="-1.33333" offsety="-3.33333e-06" repeatx="1">
-  <image source="Background.png" width="928" height="576"/>
- </imagelayer>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="120" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="437">
+ <tileset firstgid="1" source="Enemy.tsx"/>
+ <tileset firstgid="2" source="Coin.tsx"/>
+ <tileset firstgid="3" source="Player.tsx"/>
+ <tileset firstgid="4" source="threeTile1.tsx"/>
+ <tileset firstgid="5" source="threeTile2.tsx"/>
+ <tileset firstgid="6" source="threeTile3.tsx"/>
+ <tileset firstgid="7" source="threeTile4.tsx"/>
+ <tileset firstgid="8" source="Aegis.tsx"/>
+ <tileset firstgid="9" source="sky.tsx"/>
+ <tileset firstgid="10" source="Cloud Background.tsx"/>
  <layer id="1" name="Tile Layer 1" width="120" height="18">
-  <data encoding="base64">
-   BwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAIAAAABwAAAAcAAAAHAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAHAAAABwAAAAcAAAAKAAAACgAAAAoAAAAKAAAACgAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAIAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAIAAAABwAAAAcAAAAIAAAABwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAIAAAACAAAAAgAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAIAAAABwAAAAcAAAAHAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAgAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAgAAAAJAAAABwAAAAcAAAAIAAAACQAAAAcAAAAIAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAIAAAACAAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAkAAAAJAAAABwAAAAcAAAAHAAAACQAAAAcAAAAJAAAABwAAAAgAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAIAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAgAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAIAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAACQAAAAcAAAAJAAAABwAAAAkAAAAHAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAIAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAgAAAAIAAAACAAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAgAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAIAAAACQAAAAgAAAAJAAAACAAAAAkAAAAIAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAgAAAAHAAAABwAAAAcAAAAHAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACAAAAAgAAAAIAAAACAAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAkAAAAJAAAACQAAAAcAAAAHAAAACAAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAgAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAIAAAABwAAAAcAAAAHAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAHAAAABwAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAACQAAAAkAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAABwAAAAcAAAAHAAAACQAAAAcAAAAHAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAA
+  <data encoding="base64" compression="zlib">
+   eJztmMkOwjAMRHMAqrJD2bf//0zmyAm7KG0mjEd6inKIlfj5ULVNKbXBz7DHuv8cLMASrMAabMDWcVYB9lj334E96MABHMEJnB1nFWCPdf8LuIIbuIMHeIKX42xfGjBzrDlqeGop+B2KXP0tDXtK96f2eWGPgoPwWycM88IedT/h1/bTpPzfpbXMBHvG7C+bm/Bb3gv7TLBnyL6yu1H2q+xM2W9Ql98+/2rHXhnuYK3smRhMjb2Xf63Dns93WW/+tletw543V5EvNQ==
   </data>
  </layer>
- <objectgroup id="9" name="Platforms">
-  <object id="150" x="192.333" y="416.333" width="127.667" height="63.3333"/>
-  <object id="151" x="448" y="257.667" width="96.6667" height="221.667"/>
-  <object id="154" x="704" y="158.667" width="224.667" height="320.667"/>
-  <object id="155" x="992.667" y="384.667" width="94.6667" height="94.6667"/>
-  <object id="156" x="1215.33" y="224" width="65.3333" height="256"/>
-  <object id="158" x="1184" y="288" width="31.3333" height="191.333"/>
-  <object id="159" x="1023.5" y="-0.5" width="161.5" height="193"/>
-  <object id="160" x="1471.33" y="384.667" width="160.667" height="94.6667"/>
-  <object id="161" x="1504" y="351.333" width="128" height="32.6667"/>
-  <object id="162" x="1536" y="320" width="96.6667" height="32"/>
-  <object id="163" x="1568.67" y="287.333" width="64" height="32.6667"/>
-  <object id="164" x="1600" y="257.333" width="33.3333" height="30.6667"/>
-  <object id="165" x="1728.67" y="258" width="31.3333" height="222.667"/>
-  <object id="167" x="1790.67" y="288" width="33.3333" height="191.333"/>
-  <object id="168" x="1855.33" y="319.333" width="31.3333" height="161.333"/>
-  <object id="169" x="1920" y="353.333" width="31.3333" height="126"/>
-  <object id="170" x="2112" y="-0.5" width="417" height="320"/>
-  <object id="171" x="2784" y="384" width="30.6667" height="96"/>
-  <object id="175" x="3104" y="225.333" width="416" height="254.667"/>
-  <object id="176" x="3522" y="384.667" width="94.6667" height="95.3333"/>
-  <object id="177" x="3617.33" y="418" width="30" height="63.3333"/>
-  <object id="178" x="3520" y="321.333" width="31.3333" height="64"/>
-  <object id="179" x="3552" y="351.333" width="32.6667" height="34"/>
-  <object id="190" x="0.166667" y="478.083" width="3750.75" height="63.25"/>
-  <object id="195" x="384.667" y="355.333" width="61.3333" height="93.3333"/>
-  <object id="196" x="544" y="386" width="32" height="93"/>
-  <object id="203" x="-0.333333" y="481" width="192" height="53"/>
-  <object id="204" x="0" y="479" width="194" height="66.5"/>
-  <object id="205" x="-2" y="482.5" width="196" height="73.5"/>
-  <object id="206" x="642" y="321" width="63" height="31"/>
-  <object id="207" x="672" y="191" width="34" height="34"/>
-  <object id="208" x="1150.67" y="320" width="33.3333" height="32"/>
-  <object id="209" x="1152" y="418" width="33.3333" height="28.6667"/>
-  <object id="210" x="1760.67" y="385.333" width="30.6667" height="96.6667"/>
-  <object id="211" x="1823.33" y="386" width="33.3333" height="95.3333"/>
-  <object id="212" x="1887.33" y="387.333" width="33.3333" height="93.3333"/>
-  <object id="213" x="1696" y="290.667" width="33.3333" height="30"/>
-  <object id="214" x="1694" y="386" width="43.3333" height="30"/>
-  <object id="215" x="2816" y="417" width="31" height="66"/>
-  <object id="230" x="2880.67" y="290" width="32" height="30"/>
-  <object id="231" x="2942.67" y="226" width="34" height="29.3333"/>
-  <object id="232" x="3040" y="224.667" width="32.6667" height="30"/>
-  <object id="233" x="2880" y="162.667" width="32" height="29.3333"/>
-  <object id="234" x="2944.67" y="95.3333" width="30.6667" height="31.3333"/>
-  <object id="235" x="3074" y="97.3333" width="476.667" height="31.3333"/>
-  <object id="238" x="3745.33" y="322" width="31.3333" height="158.667"/>
+ <objectgroup id="3" name="Platforms">
+  <object id="27" x="-4" y="476" width="3884" height="109.333"/>
+  <object id="129" x="190" y="383" width="66" height="32"/>
+  <object id="130" x="289" y="353" width="62" height="31"/>
+  <object id="132" x="385" y="416" width="62" height="32"/>
+  <object id="133" x="385" y="320" width="60" height="31"/>
+  <object id="134" x="481" y="290" width="224" height="29"/>
+  <object id="135" x="734" y="382" width="65" height="32"/>
+  <object id="136" x="865" y="321" width="63" height="31"/>
+  <object id="137" x="992" y="257" width="64" height="31"/>
+  <object id="138" x="865" y="191" width="65" height="33"/>
+  <object id="139" x="960" y="125" width="63" height="33"/>
+  <object id="140" x="1120" y="95" width="316" height="31"/>
+  <object id="141" x="1278" y="352" width="62" height="30"/>
+  <object id="142" x="1409" y="290" width="62" height="29"/>
+  <object id="143" x="1504" y="225" width="64" height="31"/>
+  <object id="144" x="1600" y="161" width="63" height="32"/>
+  <object id="145" x="1666" y="96" width="382" height="33"/>
  </objectgroup>
- <objectgroup id="8" name="SpawnPoints">
-  <object id="45" type="Coin" gid="12" x="97.9997" y="370.5" width="32" height="32"/>
-  <object id="280" type="Coin" gid="12" x="97.9997" y="370.5" width="32" height="32"/>
-  <object id="281" type="Coin" gid="12" x="124.666" y="374.5" width="32" height="32"/>
-  <object id="282" type="Coin" gid="12" x="124.666" y="374.5" width="32" height="32"/>
-  <object id="269" type="Coin" gid="12" x="100.666" y="258.5" width="32" height="32"/>
-  <object id="270" type="Coin" gid="12" x="134" y="257.167" width="32" height="32"/>
-  <object id="271" type="Coin" gid="12" x="159.333" y="258.5" width="32" height="32"/>
-  <object id="272" type="Coin" gid="12" x="158" y="278.5" width="32" height="32"/>
-  <object id="273" type="Coin" gid="12" x="148.666" y="294.5" width="32" height="32"/>
-  <object id="274" type="Coin" gid="12" x="148.666" y="294.5" width="32" height="32"/>
-  <object id="275" type="Coin" gid="12" x="138" y="305.167" width="32" height="32"/>
-  <object id="276" type="Coin" gid="12" x="132.666" y="319.834" width="32" height="32"/>
-  <object id="277" type="Coin" gid="12" x="126" y="337.167" width="32" height="32"/>
-  <object id="278" type="Coin" gid="12" x="122" y="343.834" width="32" height="32"/>
-  <object id="279" type="Coin" gid="12" x="122" y="343.834" width="32" height="32"/>
-  <object id="46" type="Coin" gid="12" x="153.833" y="375.667" width="32" height="32"/>
-  <object id="48" type="Coin" gid="12" x="416.666" y="480.667" width="32" height="32"/>
-  <object id="49" type="Coin" gid="12" x="547.333" y="381.667" width="32" height="32"/>
-  <object id="50" type="Coin" gid="12" x="673.333" y="479.667" width="32" height="32"/>
-  <object id="51" type="Coin" gid="12" x="932" y="482" width="32" height="32"/>
-  <object id="52" type="Coin" gid="12" x="1152" y="479" width="32" height="32"/>
-  <object id="53" type="Coin" gid="12" x="1318" y="128" width="32" height="32"/>
-  <object id="54" type="Coin" gid="12" x="1506" y="164" width="32" height="32"/>
-  <object id="66" type="Coin" gid="12" x="1634" y="478" width="32" height="32"/>
-  <object id="58" type="Coin" gid="12" x="2030" y="284" width="32" height="32"/>
-  <object id="59" type="Coin" gid="12" x="2274" y="484" width="32" height="32"/>
-  <object id="63" type="Coin" gid="12" x="3746" y="284" width="32" height="32"/>
-  <object id="140" type="Door" gid="3" x="259.03" y="401.958" width="64" height="96">
-   <properties>
-    <property name="NextLevel" value="Level1.tmx"/>
-   </properties>
-  </object>
-  <object id="182" type="Player" gid="11" x="47" y="388.333" width="32" height="32"/>
-  <object id="222" type="Coin" gid="12" x="2883" y="289" width="32" height="32"/>
-  <object id="225" type="Coin" gid="12" x="2881" y="162" width="32" height="32"/>
-  <object id="227" type="Coin" gid="12" x="2944" y="96" width="32" height="32"/>
-  <object id="240" type="Enemy" gid="13" x="237" y="415" width="32" height="32"/>
-  <object id="241" type="Enemy" gid="13" x="481" y="254" width="32" height="32"/>
-  <object id="242" type="Enemy" gid="13" x="607" y="476" width="32" height="32"/>
-  <object id="243" type="Enemy" gid="13" x="736" y="154" width="32" height="32"/>
-  <object id="244" type="Enemy" gid="13" x="770" y="154" width="32" height="32"/>
-  <object id="245" type="Enemy" gid="13" x="1092" y="475" width="32" height="32"/>
-  <object id="246" type="Enemy" gid="13" x="1248" y="220" width="32" height="32"/>
-  <object id="247" type="Enemy" gid="13" x="1436" y="477" width="32" height="32"/>
-  <object id="248" type="Enemy" gid="13" x="1400" y="476" width="32" height="32"/>
-  <object id="249" type="Enemy" gid="13" x="1601" y="252" width="32" height="32"/>
-  <object id="250" type="Enemy" gid="13" x="1688" y="474" width="32" height="32"/>
-  <object id="251" type="Enemy" gid="13" x="1958" y="474" width="32" height="32"/>
-  <object id="252" type="Enemy" gid="13" x="1991" y="475" width="32" height="32"/>
-  <object id="253" type="Enemy" gid="13" x="2025" y="474" width="32" height="32"/>
-  <object id="256" type="Enemy" gid="13" x="2719" y="480" width="32" height="32"/>
-  <object id="257" type="Enemy" gid="13" x="2754" y="478" width="32" height="32"/>
-  <object id="258" type="Enemy" gid="13" x="2881" y="477" width="32" height="32"/>
-  <object id="259" type="Enemy" gid="13" x="2915" y="476" width="32" height="32"/>
-  <object id="260" type="Enemy" gid="13" x="3005" y="476" width="32" height="32"/>
-  <object id="261" type="Enemy" gid="13" x="3005" y="476" width="32" height="32"/>
-  <object id="262" type="Enemy" gid="13" x="3005" y="476" width="32" height="32"/>
-  <object id="263" type="Enemy" gid="13" x="3042" y="476" width="32" height="32"/>
-  <object id="264" type="Enemy" gid="13" x="3230" y="224" width="32" height="32"/>
-  <object id="265" type="Enemy" gid="13" x="3261" y="223" width="32" height="32"/>
-  <object id="266" type="Enemy" gid="13" x="3654" y="475" width="32" height="32"/>
-  <object id="267" type="Enemy" gid="13" x="3686" y="475" width="32" height="32"/>
-  <object id="268" type="Enemy" gid="13" x="3711" y="476" width="32" height="32"/>
+ <objectgroup id="2" name="SpawnPoints">
+  <object id="1" type="Coin" gid="2" x="158" y="313.334" width="32" height="32"/>
+  <object id="2" type="Coin" gid="2" x="134.833" y="322.334" width="32" height="32"/>
+  <object id="3" type="Coin" gid="2" x="106.167" y="320.167" width="32" height="32"/>
+  <object id="4" type="Coin" gid="2" x="78.8335" y="306.167" width="32" height="32"/>
+  <object id="5" type="Coin" gid="2" x="63.5002" y="283.5" width="32" height="32"/>
+  <object id="6" type="Coin" gid="2" x="73.8335" y="112.667" width="32" height="32"/>
+  <object id="7" type="Coin" gid="2" x="95.3335" y="95.167" width="32" height="32"/>
+  <object id="8" type="Coin" gid="2" x="122.333" y="90.167" width="32" height="32"/>
+  <object id="9" type="Coin" gid="2" x="147.833" y="97.167" width="32" height="32"/>
+  <object id="10" type="Coin" gid="2" x="168.833" y="113.667" width="32" height="32"/>
+  <object id="11" type="Coin" gid="2" x="182.833" y="130.167" width="32" height="32"/>
+  <object id="12" type="Coin" gid="2" x="184.333" y="150.667" width="32" height="32"/>
+  <object id="13" type="Coin" gid="2" x="180.833" y="169.667" width="32" height="32"/>
+  <object id="14" type="Coin" gid="2" x="169.833" y="184.667" width="32" height="32"/>
+  <object id="15" type="Coin" gid="2" x="155.833" y="191.167" width="32" height="32"/>
+  <object id="16" type="Coin" gid="2" x="120.667" y="205.667" width="32" height="32"/>
+  <object id="17" type="Coin" gid="2" x="136.667" y="200.334" width="32" height="32"/>
+  <object id="18" type="Coin" gid="2" x="142.5" y="221" width="32" height="32"/>
+  <object id="19" type="Coin" gid="2" x="165.5" y="235" width="32" height="32"/>
+  <object id="20" type="Coin" gid="2" x="181.5" y="254.167" width="32" height="32"/>
+  <object id="21" type="Coin" gid="2" x="170.166" y="302.167" width="32" height="32"/>
+  <object id="22" type="Coin" gid="2" x="183.666" y="281.167" width="32" height="32"/>
+  <object id="23" type="Coin" gid="2" x="61.3335" y="259.334" width="32" height="32"/>
+  <object id="24" type="Coin" gid="2" x="282.666" y="209.167" width="32" height="32"/>
+  <object id="25" type="Player" gid="3" x="70.0005" y="373.833" width="32" height="32"/>
+  <object id="26" type="Enemy" gid="1" x="237" y="206.5" width="32" height="32"/>
+  <object id="31" type="Enemy" gid="1" x="255.667" y="479.333" width="32" height="32"/>
+  <object id="336" type="Enemy" gid="1" x="995.667" y="482" width="32" height="32"/>
+  <object id="432" type="Enemy" gid="1" x="1737" y="484" width="32" height="32"/>
+  <object id="208" type="Enemy" gid="1" x="503.667" y="480.333" width="32" height="32"/>
+  <object id="335" type="Enemy" gid="1" x="1243.67" y="483" width="32" height="32"/>
+  <object id="431" type="Enemy" gid="1" x="1985" y="485" width="32" height="32"/>
+  <object id="240" type="Enemy" gid="1" x="750.167" y="481.333" width="32" height="32"/>
+  <object id="334" type="Enemy" gid="1" x="1490.17" y="484" width="32" height="32"/>
+  <object id="430" type="Enemy" gid="1" x="2231.5" y="486" width="32" height="32"/>
+  <object id="176" type="Enemy" gid="1" x="379.5" y="480.333" width="32" height="32"/>
+  <object id="333" type="Enemy" gid="1" x="1119.5" y="483" width="32" height="32"/>
+  <object id="429" type="Enemy" gid="1" x="1860.83" y="485" width="32" height="32"/>
+  <object id="207" type="Enemy" gid="1" x="627.5" y="481.333" width="32" height="32"/>
+  <object id="332" type="Enemy" gid="1" x="1367.5" y="484" width="32" height="32"/>
+  <object id="428" type="Enemy" gid="1" x="2108.83" y="486" width="32" height="32"/>
+  <object id="239" type="Enemy" gid="1" x="874" y="482.333" width="32" height="32"/>
+  <object id="331" type="Enemy" gid="1" x="1614" y="485" width="32" height="32"/>
+  <object id="427" type="Enemy" gid="1" x="2355.33" y="487" width="32" height="32"/>
+  <object id="152" type="Enemy" gid="1" x="287.667" y="479.667" width="32" height="32"/>
+  <object id="330" type="Enemy" gid="1" x="1027.67" y="482.333" width="32" height="32"/>
+  <object id="426" type="Enemy" gid="1" x="1769" y="484.333" width="32" height="32"/>
+  <object id="206" type="Enemy" gid="1" x="535.667" y="480.667" width="32" height="32"/>
+  <object id="329" type="Enemy" gid="1" x="1275.67" y="483.333" width="32" height="32"/>
+  <object id="425" type="Enemy" gid="1" x="2017" y="485.333" width="32" height="32"/>
+  <object id="238" type="Enemy" gid="1" x="782.167" y="481.667" width="32" height="32"/>
+  <object id="328" type="Enemy" gid="1" x="1522.17" y="484.333" width="32" height="32"/>
+  <object id="424" type="Enemy" gid="1" x="2263.5" y="486.333" width="32" height="32"/>
+  <object id="175" type="Enemy" gid="1" x="411.5" y="480.667" width="32" height="32"/>
+  <object id="327" type="Enemy" gid="1" x="1151.5" y="483.333" width="32" height="32"/>
+  <object id="423" type="Enemy" gid="1" x="1892.83" y="485.333" width="32" height="32"/>
+  <object id="205" type="Enemy" gid="1" x="659.5" y="481.667" width="32" height="32"/>
+  <object id="326" type="Enemy" gid="1" x="1399.5" y="484.333" width="32" height="32"/>
+  <object id="422" type="Enemy" gid="1" x="2140.83" y="486.333" width="32" height="32"/>
+  <object id="237" type="Enemy" gid="1" x="906" y="482.667" width="32" height="32"/>
+  <object id="325" type="Enemy" gid="1" x="1646" y="485.333" width="32" height="32"/>
+  <object id="421" type="Enemy" gid="1" x="2387.33" y="487.333" width="32" height="32"/>
+  <object id="156" type="Enemy" gid="1" x="318" y="479.667" width="32" height="32"/>
+  <object id="324" type="Enemy" gid="1" x="1058" y="482.333" width="32" height="32"/>
+  <object id="420" type="Enemy" gid="1" x="1799.33" y="484.333" width="32" height="32"/>
+  <object id="204" type="Enemy" gid="1" x="566" y="480.667" width="32" height="32"/>
+  <object id="323" type="Enemy" gid="1" x="1306" y="483.333" width="32" height="32"/>
+  <object id="419" type="Enemy" gid="1" x="2047.33" y="485.333" width="32" height="32"/>
+  <object id="236" type="Enemy" gid="1" x="812.5" y="481.667" width="32" height="32"/>
+  <object id="322" type="Enemy" gid="1" x="1552.5" y="484.333" width="32" height="32"/>
+  <object id="418" type="Enemy" gid="1" x="2293.83" y="486.333" width="32" height="32"/>
+  <object id="174" type="Enemy" gid="1" x="441.833" y="480.667" width="32" height="32"/>
+  <object id="321" type="Enemy" gid="1" x="1181.83" y="483.333" width="32" height="32"/>
+  <object id="417" type="Enemy" gid="1" x="1923.17" y="485.333" width="32" height="32"/>
+  <object id="203" type="Enemy" gid="1" x="689.833" y="481.667" width="32" height="32"/>
+  <object id="320" type="Enemy" gid="1" x="1429.83" y="484.333" width="32" height="32"/>
+  <object id="416" type="Enemy" gid="1" x="2171.17" y="486.333" width="32" height="32"/>
+  <object id="235" type="Enemy" gid="1" x="936.333" y="482.667" width="32" height="32"/>
+  <object id="319" type="Enemy" gid="1" x="1676.33" y="485.333" width="32" height="32"/>
+  <object id="415" type="Enemy" gid="1" x="2417.67" y="487.333" width="32" height="32"/>
+  <object id="434" type="Enemy" gid="1" x="2475.67" y="486.667" width="32" height="32"/>
+  <object id="436" type="Enemy" gid="1" x="2531" y="485.333" width="32" height="32"/>
+  <object id="160" type="Enemy" gid="1" x="348.333" y="479.667" width="32" height="32"/>
+  <object id="318" type="Enemy" gid="1" x="1088.33" y="482.333" width="32" height="32"/>
+  <object id="414" type="Enemy" gid="1" x="1829.67" y="484.333" width="32" height="32"/>
+  <object id="202" type="Enemy" gid="1" x="596.333" y="480.667" width="32" height="32"/>
+  <object id="317" type="Enemy" gid="1" x="1336.33" y="483.333" width="32" height="32"/>
+  <object id="413" type="Enemy" gid="1" x="2077.67" y="485.333" width="32" height="32"/>
+  <object id="234" type="Enemy" gid="1" x="842.833" y="481.667" width="32" height="32"/>
+  <object id="316" type="Enemy" gid="1" x="1582.83" y="484.333" width="32" height="32"/>
+  <object id="412" type="Enemy" gid="1" x="2324.17" y="486.333" width="32" height="32"/>
+  <object id="173" type="Enemy" gid="1" x="472.167" y="480.667" width="32" height="32"/>
+  <object id="315" type="Enemy" gid="1" x="1212.17" y="483.333" width="32" height="32"/>
+  <object id="411" type="Enemy" gid="1" x="1953.5" y="485.333" width="32" height="32"/>
+  <object id="201" type="Enemy" gid="1" x="720.167" y="481.667" width="32" height="32"/>
+  <object id="314" type="Enemy" gid="1" x="1460.17" y="484.333" width="32" height="32"/>
+  <object id="410" type="Enemy" gid="1" x="2201.5" y="486.333" width="32" height="32"/>
+  <object id="233" type="Enemy" gid="1" x="966.667" y="482.667" width="32" height="32"/>
+  <object id="313" type="Enemy" gid="1" x="1706.67" y="485.333" width="32" height="32"/>
+  <object id="409" type="Enemy" gid="1" x="2448" y="487.333" width="32" height="32"/>
+  <object id="433" type="Enemy" gid="1" x="2506" y="486.667" width="32" height="32"/>
+  <object id="435" type="Enemy" gid="1" x="2561.33" y="485.333" width="32" height="32"/>
+  <object id="148" type="Enemy" gid="1" x="255.667" y="479.333" width="32" height="32"/>
+  <object id="312" type="Enemy" gid="1" x="995.667" y="482" width="32" height="32"/>
+  <object id="408" type="Enemy" gid="1" x="1737" y="484" width="32" height="32"/>
+  <object id="200" type="Enemy" gid="1" x="503.667" y="480.333" width="32" height="32"/>
+  <object id="311" type="Enemy" gid="1" x="1243.67" y="483" width="32" height="32"/>
+  <object id="407" type="Enemy" gid="1" x="1985" y="485" width="32" height="32"/>
+  <object id="232" type="Enemy" gid="1" x="750.167" y="481.333" width="32" height="32"/>
+  <object id="310" type="Enemy" gid="1" x="1490.17" y="484" width="32" height="32"/>
+  <object id="406" type="Enemy" gid="1" x="2231.5" y="486" width="32" height="32"/>
+  <object id="172" type="Enemy" gid="1" x="379.5" y="480.333" width="32" height="32"/>
+  <object id="309" type="Enemy" gid="1" x="1119.5" y="483" width="32" height="32"/>
+  <object id="405" type="Enemy" gid="1" x="1860.83" y="485" width="32" height="32"/>
+  <object id="199" type="Enemy" gid="1" x="627.5" y="481.333" width="32" height="32"/>
+  <object id="308" type="Enemy" gid="1" x="1367.5" y="484" width="32" height="32"/>
+  <object id="404" type="Enemy" gid="1" x="2108.83" y="486" width="32" height="32"/>
+  <object id="231" type="Enemy" gid="1" x="874" y="482.333" width="32" height="32"/>
+  <object id="307" type="Enemy" gid="1" x="1614" y="485" width="32" height="32"/>
+  <object id="403" type="Enemy" gid="1" x="2355.33" y="487" width="32" height="32"/>
+  <object id="151" type="Enemy" gid="1" x="287.667" y="479.667" width="32" height="32"/>
+  <object id="306" type="Enemy" gid="1" x="1027.67" y="482.333" width="32" height="32"/>
+  <object id="402" type="Enemy" gid="1" x="1769" y="484.333" width="32" height="32"/>
+  <object id="198" type="Enemy" gid="1" x="535.667" y="480.667" width="32" height="32"/>
+  <object id="305" type="Enemy" gid="1" x="1275.67" y="483.333" width="32" height="32"/>
+  <object id="401" type="Enemy" gid="1" x="2017" y="485.333" width="32" height="32"/>
+  <object id="230" type="Enemy" gid="1" x="782.167" y="481.667" width="32" height="32"/>
+  <object id="304" type="Enemy" gid="1" x="1522.17" y="484.333" width="32" height="32"/>
+  <object id="400" type="Enemy" gid="1" x="2263.5" y="486.333" width="32" height="32"/>
+  <object id="171" type="Enemy" gid="1" x="411.5" y="480.667" width="32" height="32"/>
+  <object id="303" type="Enemy" gid="1" x="1151.5" y="483.333" width="32" height="32"/>
+  <object id="399" type="Enemy" gid="1" x="1892.83" y="485.333" width="32" height="32"/>
+  <object id="197" type="Enemy" gid="1" x="659.5" y="481.667" width="32" height="32"/>
+  <object id="302" type="Enemy" gid="1" x="1399.5" y="484.333" width="32" height="32"/>
+  <object id="398" type="Enemy" gid="1" x="2140.83" y="486.333" width="32" height="32"/>
+  <object id="229" type="Enemy" gid="1" x="906" y="482.667" width="32" height="32"/>
+  <object id="301" type="Enemy" gid="1" x="1646" y="485.333" width="32" height="32"/>
+  <object id="397" type="Enemy" gid="1" x="2387.33" y="487.333" width="32" height="32"/>
+  <object id="155" type="Enemy" gid="1" x="318" y="479.667" width="32" height="32"/>
+  <object id="300" type="Enemy" gid="1" x="1058" y="482.333" width="32" height="32"/>
+  <object id="396" type="Enemy" gid="1" x="1799.33" y="484.333" width="32" height="32"/>
+  <object id="196" type="Enemy" gid="1" x="566" y="480.667" width="32" height="32"/>
+  <object id="299" type="Enemy" gid="1" x="1306" y="483.333" width="32" height="32"/>
+  <object id="395" type="Enemy" gid="1" x="2047.33" y="485.333" width="32" height="32"/>
+  <object id="228" type="Enemy" gid="1" x="812.5" y="481.667" width="32" height="32"/>
+  <object id="298" type="Enemy" gid="1" x="1552.5" y="484.333" width="32" height="32"/>
+  <object id="394" type="Enemy" gid="1" x="2293.83" y="486.333" width="32" height="32"/>
+  <object id="170" type="Enemy" gid="1" x="441.833" y="480.667" width="32" height="32"/>
+  <object id="297" type="Enemy" gid="1" x="1181.83" y="483.333" width="32" height="32"/>
+  <object id="393" type="Enemy" gid="1" x="1923.17" y="485.333" width="32" height="32"/>
+  <object id="195" type="Enemy" gid="1" x="689.833" y="481.667" width="32" height="32"/>
+  <object id="296" type="Enemy" gid="1" x="1429.83" y="484.333" width="32" height="32"/>
+  <object id="392" type="Enemy" gid="1" x="2171.17" y="486.333" width="32" height="32"/>
+  <object id="227" type="Enemy" gid="1" x="936.333" y="482.667" width="32" height="32"/>
+  <object id="295" type="Enemy" gid="1" x="1676.33" y="485.333" width="32" height="32"/>
+  <object id="391" type="Enemy" gid="1" x="2417.67" y="487.333" width="32" height="32"/>
+  <object id="159" type="Enemy" gid="1" x="348.333" y="479.667" width="32" height="32"/>
+  <object id="294" type="Enemy" gid="1" x="1088.33" y="482.333" width="32" height="32"/>
+  <object id="390" type="Enemy" gid="1" x="1829.67" y="484.333" width="32" height="32"/>
+  <object id="194" type="Enemy" gid="1" x="596.333" y="480.667" width="32" height="32"/>
+  <object id="293" type="Enemy" gid="1" x="1336.33" y="483.333" width="32" height="32"/>
+  <object id="389" type="Enemy" gid="1" x="2077.67" y="485.333" width="32" height="32"/>
+  <object id="226" type="Enemy" gid="1" x="842.833" y="481.667" width="32" height="32"/>
+  <object id="292" type="Enemy" gid="1" x="1582.83" y="484.333" width="32" height="32"/>
+  <object id="388" type="Enemy" gid="1" x="2324.17" y="486.333" width="32" height="32"/>
+  <object id="169" type="Enemy" gid="1" x="472.167" y="480.667" width="32" height="32"/>
+  <object id="291" type="Enemy" gid="1" x="1212.17" y="483.333" width="32" height="32"/>
+  <object id="387" type="Enemy" gid="1" x="1953.5" y="485.333" width="32" height="32"/>
+  <object id="193" type="Enemy" gid="1" x="720.167" y="481.667" width="32" height="32"/>
+  <object id="290" type="Enemy" gid="1" x="1460.17" y="484.333" width="32" height="32"/>
+  <object id="386" type="Enemy" gid="1" x="2201.5" y="486.333" width="32" height="32"/>
+  <object id="225" type="Enemy" gid="1" x="966.667" y="482.667" width="32" height="32"/>
+  <object id="289" type="Enemy" gid="1" x="1706.67" y="485.333" width="32" height="32"/>
+  <object id="385" type="Enemy" gid="1" x="2448" y="487.333" width="32" height="32"/>
+  <object id="146" type="Enemy" gid="1" x="255.667" y="479.333" width="32" height="32"/>
+  <object id="288" type="Enemy" gid="1" x="995.667" y="482" width="32" height="32"/>
+  <object id="384" type="Enemy" gid="1" x="1737" y="484" width="32" height="32"/>
+  <object id="192" type="Enemy" gid="1" x="503.667" y="480.333" width="32" height="32"/>
+  <object id="287" type="Enemy" gid="1" x="1243.67" y="483" width="32" height="32"/>
+  <object id="383" type="Enemy" gid="1" x="1985" y="485" width="32" height="32"/>
+  <object id="224" type="Enemy" gid="1" x="750.167" y="481.333" width="32" height="32"/>
+  <object id="286" type="Enemy" gid="1" x="1490.17" y="484" width="32" height="32"/>
+  <object id="382" type="Enemy" gid="1" x="2231.5" y="486" width="32" height="32"/>
+  <object id="168" type="Enemy" gid="1" x="379.5" y="480.333" width="32" height="32"/>
+  <object id="285" type="Enemy" gid="1" x="1119.5" y="483" width="32" height="32"/>
+  <object id="381" type="Enemy" gid="1" x="1860.83" y="485" width="32" height="32"/>
+  <object id="191" type="Enemy" gid="1" x="627.5" y="481.333" width="32" height="32"/>
+  <object id="284" type="Enemy" gid="1" x="1367.5" y="484" width="32" height="32"/>
+  <object id="380" type="Enemy" gid="1" x="2108.83" y="486" width="32" height="32"/>
+  <object id="223" type="Enemy" gid="1" x="874" y="482.333" width="32" height="32"/>
+  <object id="283" type="Enemy" gid="1" x="1614" y="485" width="32" height="32"/>
+  <object id="379" type="Enemy" gid="1" x="2355.33" y="487" width="32" height="32"/>
+  <object id="150" type="Enemy" gid="1" x="287.667" y="479.667" width="32" height="32"/>
+  <object id="282" type="Enemy" gid="1" x="1027.67" y="482.333" width="32" height="32"/>
+  <object id="378" type="Enemy" gid="1" x="1769" y="484.333" width="32" height="32"/>
+  <object id="190" type="Enemy" gid="1" x="535.667" y="480.667" width="32" height="32"/>
+  <object id="281" type="Enemy" gid="1" x="1275.67" y="483.333" width="32" height="32"/>
+  <object id="377" type="Enemy" gid="1" x="2017" y="485.333" width="32" height="32"/>
+  <object id="222" type="Enemy" gid="1" x="782.167" y="481.667" width="32" height="32"/>
+  <object id="280" type="Enemy" gid="1" x="1522.17" y="484.333" width="32" height="32"/>
+  <object id="376" type="Enemy" gid="1" x="2263.5" y="486.333" width="32" height="32"/>
+  <object id="167" type="Enemy" gid="1" x="411.5" y="480.667" width="32" height="32"/>
+  <object id="279" type="Enemy" gid="1" x="1151.5" y="483.333" width="32" height="32"/>
+  <object id="375" type="Enemy" gid="1" x="1892.83" y="485.333" width="32" height="32"/>
+  <object id="189" type="Enemy" gid="1" x="659.5" y="481.667" width="32" height="32"/>
+  <object id="278" type="Enemy" gid="1" x="1399.5" y="484.333" width="32" height="32"/>
+  <object id="374" type="Enemy" gid="1" x="2140.83" y="486.333" width="32" height="32"/>
+  <object id="221" type="Enemy" gid="1" x="906" y="482.667" width="32" height="32"/>
+  <object id="277" type="Enemy" gid="1" x="1646" y="485.333" width="32" height="32"/>
+  <object id="373" type="Enemy" gid="1" x="2387.33" y="487.333" width="32" height="32"/>
+  <object id="154" type="Enemy" gid="1" x="318" y="479.667" width="32" height="32"/>
+  <object id="276" type="Enemy" gid="1" x="1058" y="482.333" width="32" height="32"/>
+  <object id="372" type="Enemy" gid="1" x="1799.33" y="484.333" width="32" height="32"/>
+  <object id="188" type="Enemy" gid="1" x="566" y="480.667" width="32" height="32"/>
+  <object id="275" type="Enemy" gid="1" x="1306" y="483.333" width="32" height="32"/>
+  <object id="371" type="Enemy" gid="1" x="2047.33" y="485.333" width="32" height="32"/>
+  <object id="220" type="Enemy" gid="1" x="812.5" y="481.667" width="32" height="32"/>
+  <object id="274" type="Enemy" gid="1" x="1552.5" y="484.333" width="32" height="32"/>
+  <object id="370" type="Enemy" gid="1" x="2293.83" y="486.333" width="32" height="32"/>
+  <object id="166" type="Enemy" gid="1" x="441.833" y="480.667" width="32" height="32"/>
+  <object id="273" type="Enemy" gid="1" x="1181.83" y="483.333" width="32" height="32"/>
+  <object id="369" type="Enemy" gid="1" x="1923.17" y="485.333" width="32" height="32"/>
+  <object id="187" type="Enemy" gid="1" x="689.833" y="481.667" width="32" height="32"/>
+  <object id="272" type="Enemy" gid="1" x="1429.83" y="484.333" width="32" height="32"/>
+  <object id="368" type="Enemy" gid="1" x="2171.17" y="486.333" width="32" height="32"/>
+  <object id="219" type="Enemy" gid="1" x="936.333" y="482.667" width="32" height="32"/>
+  <object id="271" type="Enemy" gid="1" x="1676.33" y="485.333" width="32" height="32"/>
+  <object id="367" type="Enemy" gid="1" x="2417.67" y="487.333" width="32" height="32"/>
+  <object id="158" type="Enemy" gid="1" x="348.333" y="479.667" width="32" height="32"/>
+  <object id="270" type="Enemy" gid="1" x="1088.33" y="482.333" width="32" height="32"/>
+  <object id="366" type="Enemy" gid="1" x="1829.67" y="484.333" width="32" height="32"/>
+  <object id="186" type="Enemy" gid="1" x="596.333" y="480.667" width="32" height="32"/>
+  <object id="269" type="Enemy" gid="1" x="1336.33" y="483.333" width="32" height="32"/>
+  <object id="365" type="Enemy" gid="1" x="2077.67" y="485.333" width="32" height="32"/>
+  <object id="218" type="Enemy" gid="1" x="842.833" y="481.667" width="32" height="32"/>
+  <object id="268" type="Enemy" gid="1" x="1582.83" y="484.333" width="32" height="32"/>
+  <object id="364" type="Enemy" gid="1" x="2324.17" y="486.333" width="32" height="32"/>
+  <object id="165" type="Enemy" gid="1" x="472.167" y="480.667" width="32" height="32"/>
+  <object id="267" type="Enemy" gid="1" x="1212.17" y="483.333" width="32" height="32"/>
+  <object id="363" type="Enemy" gid="1" x="1953.5" y="485.333" width="32" height="32"/>
+  <object id="185" type="Enemy" gid="1" x="720.167" y="481.667" width="32" height="32"/>
+  <object id="266" type="Enemy" gid="1" x="1460.17" y="484.333" width="32" height="32"/>
+  <object id="362" type="Enemy" gid="1" x="2201.5" y="486.333" width="32" height="32"/>
+  <object id="217" type="Enemy" gid="1" x="966.667" y="482.667" width="32" height="32"/>
+  <object id="265" type="Enemy" gid="1" x="1706.67" y="485.333" width="32" height="32"/>
+  <object id="361" type="Enemy" gid="1" x="2448" y="487.333" width="32" height="32"/>
+  <object id="147" type="Enemy" gid="1" x="255.667" y="479.333" width="32" height="32"/>
+  <object id="264" type="Enemy" gid="1" x="995.667" y="482" width="32" height="32"/>
+  <object id="360" type="Enemy" gid="1" x="1737" y="484" width="32" height="32"/>
+  <object id="184" type="Enemy" gid="1" x="503.667" y="480.333" width="32" height="32"/>
+  <object id="263" type="Enemy" gid="1" x="1243.67" y="483" width="32" height="32"/>
+  <object id="359" type="Enemy" gid="1" x="1985" y="485" width="32" height="32"/>
+  <object id="216" type="Enemy" gid="1" x="750.167" y="481.333" width="32" height="32"/>
+  <object id="262" type="Enemy" gid="1" x="1490.17" y="484" width="32" height="32"/>
+  <object id="358" type="Enemy" gid="1" x="2231.5" y="486" width="32" height="32"/>
+  <object id="164" type="Enemy" gid="1" x="379.5" y="480.333" width="32" height="32"/>
+  <object id="261" type="Enemy" gid="1" x="1119.5" y="483" width="32" height="32"/>
+  <object id="357" type="Enemy" gid="1" x="1860.83" y="485" width="32" height="32"/>
+  <object id="183" type="Enemy" gid="1" x="627.5" y="481.333" width="32" height="32"/>
+  <object id="260" type="Enemy" gid="1" x="1367.5" y="484" width="32" height="32"/>
+  <object id="356" type="Enemy" gid="1" x="2108.83" y="486" width="32" height="32"/>
+  <object id="215" type="Enemy" gid="1" x="874" y="482.333" width="32" height="32"/>
+  <object id="259" type="Enemy" gid="1" x="1614" y="485" width="32" height="32"/>
+  <object id="355" type="Enemy" gid="1" x="2355.33" y="487" width="32" height="32"/>
+  <object id="149" type="Enemy" gid="1" x="287.667" y="479.667" width="32" height="32"/>
+  <object id="258" type="Enemy" gid="1" x="1027.67" y="482.333" width="32" height="32"/>
+  <object id="354" type="Enemy" gid="1" x="1769" y="484.333" width="32" height="32"/>
+  <object id="182" type="Enemy" gid="1" x="535.667" y="480.667" width="32" height="32"/>
+  <object id="257" type="Enemy" gid="1" x="1275.67" y="483.333" width="32" height="32"/>
+  <object id="353" type="Enemy" gid="1" x="2017" y="485.333" width="32" height="32"/>
+  <object id="214" type="Enemy" gid="1" x="782.167" y="481.667" width="32" height="32"/>
+  <object id="256" type="Enemy" gid="1" x="1522.17" y="484.333" width="32" height="32"/>
+  <object id="352" type="Enemy" gid="1" x="2263.5" y="486.333" width="32" height="32"/>
+  <object id="163" type="Enemy" gid="1" x="411.5" y="480.667" width="32" height="32"/>
+  <object id="255" type="Enemy" gid="1" x="1151.5" y="483.333" width="32" height="32"/>
+  <object id="351" type="Enemy" gid="1" x="1892.83" y="485.333" width="32" height="32"/>
+  <object id="181" type="Enemy" gid="1" x="659.5" y="481.667" width="32" height="32"/>
+  <object id="254" type="Enemy" gid="1" x="1399.5" y="484.333" width="32" height="32"/>
+  <object id="350" type="Enemy" gid="1" x="2140.83" y="486.333" width="32" height="32"/>
+  <object id="213" type="Enemy" gid="1" x="906" y="482.667" width="32" height="32"/>
+  <object id="253" type="Enemy" gid="1" x="1646" y="485.333" width="32" height="32"/>
+  <object id="349" type="Enemy" gid="1" x="2387.33" y="487.333" width="32" height="32"/>
+  <object id="153" type="Enemy" gid="1" x="318" y="479.667" width="32" height="32"/>
+  <object id="252" type="Enemy" gid="1" x="1058" y="482.333" width="32" height="32"/>
+  <object id="348" type="Enemy" gid="1" x="1799.33" y="484.333" width="32" height="32"/>
+  <object id="180" type="Enemy" gid="1" x="566" y="480.667" width="32" height="32"/>
+  <object id="251" type="Enemy" gid="1" x="1306" y="483.333" width="32" height="32"/>
+  <object id="347" type="Enemy" gid="1" x="2047.33" y="485.333" width="32" height="32"/>
+  <object id="212" type="Enemy" gid="1" x="812.5" y="481.667" width="32" height="32"/>
+  <object id="250" type="Enemy" gid="1" x="1552.5" y="484.333" width="32" height="32"/>
+  <object id="346" type="Enemy" gid="1" x="2293.83" y="486.333" width="32" height="32"/>
+  <object id="162" type="Enemy" gid="1" x="441.833" y="480.667" width="32" height="32"/>
+  <object id="249" type="Enemy" gid="1" x="1181.83" y="483.333" width="32" height="32"/>
+  <object id="345" type="Enemy" gid="1" x="1923.17" y="485.333" width="32" height="32"/>
+  <object id="179" type="Enemy" gid="1" x="689.833" y="481.667" width="32" height="32"/>
+  <object id="248" type="Enemy" gid="1" x="1429.83" y="484.333" width="32" height="32"/>
+  <object id="344" type="Enemy" gid="1" x="2171.17" y="486.333" width="32" height="32"/>
+  <object id="211" type="Enemy" gid="1" x="936.333" y="482.667" width="32" height="32"/>
+  <object id="247" type="Enemy" gid="1" x="1676.33" y="485.333" width="32" height="32"/>
+  <object id="343" type="Enemy" gid="1" x="2417.67" y="487.333" width="32" height="32"/>
+  <object id="157" type="Enemy" gid="1" x="348.333" y="479.667" width="32" height="32"/>
+  <object id="246" type="Enemy" gid="1" x="1088.33" y="482.333" width="32" height="32"/>
+  <object id="342" type="Enemy" gid="1" x="1829.67" y="484.333" width="32" height="32"/>
+  <object id="178" type="Enemy" gid="1" x="596.333" y="480.667" width="32" height="32"/>
+  <object id="245" type="Enemy" gid="1" x="1336.33" y="483.333" width="32" height="32"/>
+  <object id="341" type="Enemy" gid="1" x="2077.67" y="485.333" width="32" height="32"/>
+  <object id="210" type="Enemy" gid="1" x="842.833" y="481.667" width="32" height="32"/>
+  <object id="244" type="Enemy" gid="1" x="1582.83" y="484.333" width="32" height="32"/>
+  <object id="340" type="Enemy" gid="1" x="2324.17" y="486.333" width="32" height="32"/>
+  <object id="161" type="Enemy" gid="1" x="472.167" y="480.667" width="32" height="32"/>
+  <object id="243" type="Enemy" gid="1" x="1212.17" y="483.333" width="32" height="32"/>
+  <object id="339" type="Enemy" gid="1" x="1953.5" y="485.333" width="32" height="32"/>
+  <object id="177" type="Enemy" gid="1" x="720.167" y="481.667" width="32" height="32"/>
+  <object id="242" type="Enemy" gid="1" x="1460.17" y="484.333" width="32" height="32"/>
+  <object id="338" type="Enemy" gid="1" x="2201.5" y="486.333" width="32" height="32"/>
+  <object id="209" type="Enemy" gid="1" x="966.667" y="482.667" width="32" height="32"/>
+  <object id="241" type="Enemy" gid="1" x="1706.67" y="485.333" width="32" height="32"/>
+  <object id="337" type="Enemy" gid="1" x="2448" y="487.333" width="32" height="32"/>
  </objectgroup>
 </map>
