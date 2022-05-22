@@ -67,6 +67,15 @@ flutter:
     - assets/audio/collectCoin.mp3
     - assets/audio/damage.mp3
     - assets/audio/jump.mp3
+    - assets/level1BG.jpg
+    - assets/heroSprite.png
+    - assets/enemySprite.png
+    - assets/enemyFireBall.png
+    - assets/heroFireBall.png
+    - assets/RightButton.png
+    - assets/LeftButton.png
+    - assets/gameOver.png
+    - assets/youWin.png
 
   fonts:
     - family: Invasion2000

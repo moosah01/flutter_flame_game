@@ -62,7 +62,7 @@ class MyAppGame extends StatelessWidget {
 
 class GameState extends ChangeNotifier {
   int _score = 0;
-  int _health = 500;
+  int _health = 300;
   int get score => _score;
   set score(int score) {
     _score = score;
